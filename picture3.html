@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>资源库</title>
+<link href="css/about.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="Javascript/jquery.js"></script>
+</head>
+<body>
+    <div class="xian"></div>
+    <div class="top">
+        <div class="header">
+            <span class="wec">欢迎来到PPT制作小课堂！</span>
+            <div class="call">
+                
+                
+            </div>
+            <div class="clearfix"></div>
+            <hr/>
+        </div>
+</div>
+<div class="nav">
+    
+    <ul class="menu">
+        <li class="dw"><a style="background:none;padding-right:0;" href="index.html">首页</a></li>
+        <li class="dw"><a href="about.html">关于我们</a>
+            <ul class="in_menu">
+                <li><a href="about.html">关于我们</a></li>
+               
+            </ul>
+        </li>
+        <li class="dw">
+            <a href="news.html">推荐学习</a>
+            <ul class="in_menu">
+                <li><a href="news.html">推荐学习</a></li>
+                
+            </ul>
+        </li>
+        <li class="dw">
+            <a href="picture.html">资源库</a>
+             <ul class="in_menu">
+                <li><a href="picture.html">模板网站</a></li>
+                <li><a href="picture1.html">图库网站</a></li>
+                <li><a href="picture2.html">字体网站</a></li>
+                <li><a href="picture3.html">配色网站</a></li>
+                
+            </ul>
+        </li>
+      <li class="dw">
+       <a href="#">@我</a>
+                    <ul class="in_menu">
+                        <li><a href="message.html">在线留言</a></li>
+                        
+                    </ul>
+                </li>
+        <div class="clearfix"></div>
+    </ul>
+    <div class="clearfix"></div>
+</div>
+<div class="banner">
+	<div class="xian_2"></div>
+	<img src="images/xuexi.jpeg">
+    <div class="title_1"><div class="kk"><h1>资源库</h1></div></div>
+</div>
+<div class="location">
+	当前位置：首页 >资源库> <span>配色网站</span>
+</div>
+<div class="tab">
+	<div class="xian_1"></div>
+    <div class="box">
+		<ul class="menu_1">
+        <li><a href="picture.html">模板网站</a>
+            <li><a href="picture1.html">图库网站</a></li>
+           <li><a href="picture3.html">配色网站</a></li>
+             
+                
+            </li>
+            
+            <li style="color:#d7000f;">字体网站<div class="xian"></div></li>
+            
+            
+        	
+        	
+        	<div class="clearfix"></div>
+    	</ul>
+    </div>
+</div>
+<div class="food">
+    <div class="pro">
+        <a href="
+https://colorhunt.co/
+
+
+">
+            <div class="ss"><img src="images/color.png"></div>
+            <div class="black"></div>
+            <div class="des">colorhunt</div>
+        </a>
+            
+        <a href="http://www.fancynode.com.cn/colorcube/home
+">
+            <div class="ss"><img src="images/fanc.png "></div>
+            <div class="black"></div>
+            <div class="des">配色神器</div>
+        </a>
+        
+    </div>
+</div>
+
+<script type="text/javascript">
+	$(".menu_2").hide();
+	$(".menu_1 li").mouseenter(
+		function(){
+			$(this).children(".menu_2").show();	
+		}
+	)
+	$(".menu_1 li").mouseleave(
+		function(){
+			$(this).children(".menu_2").hide();	
+		}
+	)
+	$(".pro a").mouseenter(
+		function(){
+		$(this).children(".black").hide();
+		$(this).siblings().children(".black").show(); 
+		$(this).children(".des").addClass("red");
+		$(this).siblings().children(".des").removeClass("red");				
+	})
+	
+	$(".pro a").mouseleave(
+		function(){
+			$(this).children(".black").show();
+			$(this).children(".des").removeClass("red");
+		}
+	)
+</script> 
+</body>
+</html>
